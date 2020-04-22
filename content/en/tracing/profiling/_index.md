@@ -119,7 +119,8 @@ The Datadog Profiler requires Python 2.7+. Memory profiling only works on Python
 
 | Environment variable                             | Type          | Description                                                                                      |
 | ------------------------------------------------ | ------------- | ------------------------------------------------------------------------------------------------ |
-| `DD_API_KEY`                                     | String        | The [Datadog API key][1] to use when uploading profiles.                                         |
+| `DD_API_KEY`                                     | String        | The [Datadog API key][1] to use when uploading profiles. New in version 0.37.                                        |
+| `DD_PROFILING_API_KEY`                           | String        | The [Datadog API key][1] to use when uploading profiles. Changed in 0.37: deprecated in favor of DD_API_KEY.
 | `DD_SITE`                                        | String        | If your organization is on Datadog EU site, set this to `datadoghq.eu`.                          |
 | `DD_SERVICE`                                     | String        | The Datadog [service][3] name, for example `my-web-app`, which can be set here, or in `DD_PROFILING_TAGS`.     |
 | `DD_ENV`                                         | String        | The Datadog [environment][4] name, for example `production`, which can be set here, or in `DD_PROFILING_TAGS`. |
